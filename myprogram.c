@@ -1,10 +1,11 @@
 #include "mylibrary.h"
 int sum_of_1_to_n(int n)
 {
-	int sum = 0;
-
+int sum=0;
+for(int i = 0 ;i<=n; i++){
+  sum+=i;
+}
 	//TODO: sum all numbers from 1 to n
-
 	return sum;
 }
 
