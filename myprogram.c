@@ -22,8 +22,8 @@ for (int i=0;i<count;++i)	{
 	return sum;
 }
 
-int max_of_numbers(int *array, int count)
-{int rem=0;
+int max_of_numbers(int *array, int count){
+	int rem=0;
  for (int i=0;i<count;++i){
     if(array[i]>array[rem]){
 rem=i;
@@ -39,20 +39,22 @@ rem=i;
 
 int reversed_number(int number)
 {
-	
 int reversed=0;
 int toAdd;
 while(number!=0){
 toAdd=number%10;
 number=number/10;
 reversed=reversed*10+toAdd;
-}	//TODO: if input is 12345, return 54321
+}
+
+	//TODO: if input is 12345, return 54321
 
 	return reversed;
 }
 
 int is_prime(int number)
-{ int starter= 2;
+{
+  int starter= 2;
   if(number==2 ){
    return 1;
   }else if (number == 1 ){
@@ -72,7 +74,7 @@ starter++;
 }
 
 int count_primes(int start, int end)
-{ 
+{
   int count=0;
 	//TODO: return the count of prime numbers in range [start, end] inclusive.
   for(int i = start; i<=end;i++) {
