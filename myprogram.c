@@ -11,12 +11,14 @@ for(int i = 0 ;i<=n; i++){
 
 int sum_of_even_numbers(int *array, int count)
 {
-	int sum = 0;
-	for (int i=0;i<count;++i)
-	{
+int sum = 0;
+for (int i=0;i<count;++i)	{
+    if(array[i]%2==0){
+    
 		//TODO: only add even numbers, e.g., 4. Skip odd numbers, e.g., 3
 		sum += array[i];
 	}
+  }
 	return sum;
 }
 
